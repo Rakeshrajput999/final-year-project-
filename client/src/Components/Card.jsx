@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-const Card = () => {
+const Card = (props) => {
   const [detail,setDetail] =useState(false)
     return (
         <div>
@@ -13,7 +13,9 @@ const Card = () => {
     <p>webDevoloper</p> 
     <h6>tech stack- React,js ,tailwind css,postgres,express,</h6>
     <div class="tw-justify-center tw-card-actions">
-      <button class="tw-btn tw-btn-outline tw-btn-accent" onClick={()=>setDetail()}>More info</button>
+    <button class="tw-btn tw-btn-outline tw-btn-accent" onClick={()=>{return setDetail(!detail);}}>More info</button>
+     
+
     </div>
   </div>
 </div> 

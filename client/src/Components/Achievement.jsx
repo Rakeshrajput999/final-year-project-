@@ -1,11 +1,12 @@
-import React from 'react'
+import React from "react";
+import Resume from "./Resume";
 
 const Achievement = () => {
-    return (
-        <div>
-            hello from achievement
-        </div>
-    )
-}
+  return (
+    <div>
+      <Resume />
+    </div>
+  );
+};
 
-export default Achievement
+export default Achievement;
